@@ -23,7 +23,7 @@
     /*spacing*/
     --spacing--lrg: 2rem;
     --spacing--med: 1.5rem;
-    --spacing--sm: 1rem;
+    --spacing--sm: 0.9rem;
     /*borders*/
     --border-radius: 1.8rem;
     --border-radius--sm: 0.5rem;
@@ -50,6 +50,7 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 img {
     max-width: 40%;
     height: auto;
@@ -62,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*PAGE STYLES*/
 body {
-  background-image: url(../Structured-widgets/assets/upscaled-background-homepage.png);
+  background-image: url(../assets/upscaled-background-homepage.png);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -93,7 +94,6 @@ form {
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     max-width: 400px;
-    max-height: 600px;
     margin: 0 auto;
 }
 .flex-container {
@@ -103,6 +103,10 @@ form {
     align-items: center;
     gap: var(--spacing--sm);
     margin-bottom: var(--spacing--med);
+}
+.form .flex-container{
+  max-width: 600px;
+   max-height: 500px;
 }
 .widget{
     margin-bottom: var(--spacing-sm);
@@ -129,6 +133,16 @@ input:focus {
     border-color: var(--tertiarry-color);
     box-shadow: 0 0 5px var(--tertiarry-color);
 }
+.remember {
+    display: inline-flex;
+    
+    align-items: center;
+}
+.remember-box {
+    width: 55%;
+    display: flex;
+    justify-content: flex-start;
+}
 .password {
     color: red;
     text-decoration: none;
@@ -146,6 +160,8 @@ input:focus {
     text-decoration: underline;
     color: var(--tertiarry-color);
 }
+
+
 button {
     background-color: var(--primary-color);
     color: var(--forgroundtext-color);
@@ -159,6 +175,7 @@ button {
 button:hover {
     background-color: var(--secondary-color);
 }
+
 
 
 /*FOOTER Section*/
